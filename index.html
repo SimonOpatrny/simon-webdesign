@@ -371,7 +371,7 @@
     <section class="work" id="projekty" aria-labelledby="workTitle">
       <div class="container">
         <div class="section-label eyebrow reveal">01 / Vybrané práce</div>
-        <div class="section-head"><h2 class="display reveal" id="workTitle">Vybrané<br>projekty<span style="color:#a2ad9e">.</span></h2><p class="reveal">Různé značky, různé vizuální přístupy. Tři ukázky toho, jak může vypadat promyšlený web. Všechny projekty níže jsou demonstrační koncepty.</p></div>
+        <div class="section-head"><h2 class="display reveal" id="workTitle">Vybrané<br>projekty<span style="color:#a2ad9e">.</span></h2><p class="reveal">Různé obory, různé značky a originální vizuální přístupy. Prohlédněte si živé ukázky webů — každý projekt má vlastní design a všechny jsou demonstrační koncepty.</p></div>
         <div class="filter-row reveal" role="group" aria-label="Filtrovat projekty"><button type="button" class="filter" aria-pressed="true" data-filter="all">Všechny projekty</button><button type="button" class="filter" aria-pressed="false" data-filter="business">Firemní weby</button><button type="button" class="filter" aria-pressed="false" data-filter="creative">Kreativní koncepty</button><button type="button" class="filter" aria-pressed="false" data-filter="culture">Kultura</button></div>
         <!-- Projektové karty se automaticky vygenerují z pole PROJECTS ve skriptu dole. -->
         <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
@@ -429,7 +429,7 @@
        description:'Krátký popis.',url:'https://...',preview:'generic'}
     category: business | creative | culture
     preview: nova | ink | culture | generic
-    Nepovinně: image:'https://adresa-vlastniho-obrazku.jpg' (vlastní náhled).
+    Doporučeno: image:'nazev-nahledu.png' (obrázek ve stejné složce jako index.html).
     Není potřeba vytvářet další HTML kartu — vytvoří se automaticky.
   ================================================================= */
   const PROJECTS = [
@@ -459,6 +459,60 @@
       url:'https://simonopatrny.github.io/cultural-center-demo/',
       preview:'culture',
       image:'prostor30-nahled.png'
+    },
+    {
+      name:'TURBO Autoservis',
+      category:'business',
+      type:'Autoservis / automobilové služby',
+      description:'Výrazný web autoservisu s industriální atmosférou, nabídkou oprav a snadnou cestou k poptávce.',
+      url:'https://simonopatrny.github.io/Autoservis-demo/',
+      preview:'generic',
+      image:'autoservis.png'
+    },
+    {
+      name:'CUTLINE Barbershop',
+      category:'creative',
+      type:'Barbershop / moderní studio',
+      description:'Odvážný typografický koncept barbershopu s galerií střihů, ceníkem a ukázkovou rezervací.',
+      url:'https://simonopatrny.github.io/Barber-demo/',
+      preview:'generic',
+      image:'barber.png'
+    },
+    {
+      name:'MOU. Cukrárna',
+      category:'creative',
+      type:'Cukrárna / dezerty a dorty',
+      description:'Lehký a elegantní cukrářský ateliér s fotografiemi dezertů, nabídkou a interaktivními prvky.',
+      url:'https://simonopatrny.github.io/Cukrarna-demo/',
+      preview:'generic',
+      image:'cukrarna.png'
+    },
+    {
+      name:'MEZI LESY — chaty a penzion',
+      category:'business',
+      type:'Ubytování / chaty a penzion',
+      description:'Atmosférická prezentace ubytování v přírodě s velkými fotografiemi, přehledem pobytů a kontaktem.',
+      url:'https://simonopatrny.github.io/chaty-penzion-demo/',
+      preview:'generic',
+      image:'chaty_penzion.png'
+    },
+    {
+      name:'Lesnictví a dřevorubectví',
+      category:'business',
+      type:'Lesnické služby / těžba dřeva',
+      description:'Robustní firemní koncept pro lesní práce, těžbu a zpracování dřeva s přehledem služeb.',
+      url:'https://simonopatrny.github.io/les-drevorubectvi/',
+      preview:'generic',
+      image:'les_drevorubectvi.png'
+    },
+    {
+      name:'ZÁHON. Zahradní ateliér',
+      category:'business',
+      type:'Zahradnictví / realizace zahrad',
+      description:'Přírodně laděný web zahradního studia s nabídkou péče, realizací a orientační kalkulací.',
+      url:'https://simonopatrny.github.io/Zahrady/',
+      preview:'generic',
+      image:'zahrady.png'
     }
   ];
   const iconArrow = '<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"></use></svg>';
